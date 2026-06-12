@@ -6,6 +6,7 @@
   --border: #d9e0ea;
   --accent: #165d7d;
   --accent-dark: #0f455d;
+<<<<<<< HEAD
   --bright: #ffd23f;
   --bright-dark: #f2bd00;
   --soft: #eaf4f8;
@@ -18,6 +19,13 @@
 }
 
 
+=======
+  --soft: #eaf4f8;
+  --warning: #fff3cd;
+  --warning-border: #eed483;
+}
+
+>>>>>>> 50a60ecb6cfd4f7753b1101b828a2dea905be4ef
 * { box-sizing: border-box; }
 
 body {
@@ -32,6 +40,7 @@ body {
   margin: 32px auto;
 }
 
+<<<<<<< HEAD
 .site-header {
   display: flex;
   align-items: center;
@@ -44,6 +53,8 @@ body {
   display: block;
 }
 
+=======
+>>>>>>> 50a60ecb6cfd4f7753b1101b828a2dea905be4ef
 .hero {
   margin-bottom: 20px;
 }
@@ -114,6 +125,7 @@ h3 {
   margin-bottom: 16px;
 }
 
+<<<<<<< HEAD
 .nav-row {
   margin-top: 22px;
   margin-bottom: 0;
@@ -131,6 +143,8 @@ h3 {
   white-space: nowrap;
 }
 
+=======
+>>>>>>> 50a60ecb6cfd4f7753b1101b828a2dea905be4ef
 #step-label {
   color: var(--muted);
   font-weight: 700;
@@ -169,6 +183,7 @@ h3 {
 }
 
 .secondary {
+<<<<<<< HEAD
   background: var(--quiet-button);
   border: 1px solid var(--quiet-button-border);
   color: var(--quiet-button-text);
@@ -184,6 +199,11 @@ h3 {
 .secondary:disabled {
   opacity: .55;
   cursor: not-allowed;
+=======
+  background: #fff;
+  border: 1px solid var(--border);
+  color: var(--text);
+>>>>>>> 50a60ecb6cfd4f7753b1101b828a2dea905be4ef
 }
 
 .link-button {
@@ -195,9 +215,15 @@ h3 {
 }
 
 .primary-link {
+<<<<<<< HEAD
   background: var(--bright);
   color: var(--text);
   border: 1px solid var(--bright-dark);
+=======
+  background: var(--accent);
+  color: #fff;
+  border: 1px solid var(--accent);
+>>>>>>> 50a60ecb6cfd4f7753b1101b828a2dea905be4ef
   text-decoration: none;
   display: inline-block;
   font-weight: 700;
@@ -205,9 +231,13 @@ h3 {
 
 .primary-link:hover,
 .primary-link:focus {
+<<<<<<< HEAD
   background: var(--bright-dark);
   color: var(--text);
   outline: 3px solid rgba(255, 210, 63, .35);
+=======
+  background: var(--accent-dark);
+>>>>>>> 50a60ecb6cfd4f7753b1101b828a2dea905be4ef
 }
 
 .zone-grid {
@@ -248,10 +278,13 @@ code {
 }
 
 @media (max-width: 560px) {
+<<<<<<< HEAD
   .site-logo {
     width: 76px;
   }
 
+=======
+>>>>>>> 50a60ecb6cfd4f7753b1101b828a2dea905be4ef
   .progress, .nav-row, .result-actions {
     align-items: stretch;
     flex-direction: column;
