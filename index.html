@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Syracuse Zoning Business Wizard - Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="shell">
+    <header class="site-header" aria-label="City of Syracuse branding">
+      <img class="site-logo" src="assets/syracuse-logo.webp" alt="Syracuse, New York logo" />
+    </header>
+
+    <section class="hero">
+      <p class="eyebrow">Prototype</p>
+      <h1>Find possible zoning districts for your business</h1>
+      <p class="lede">
+        Answer a few plain-English questions. This tool suggests zoning districts that may allow your business use.
+      </p>
+      <div class="notice">
+        This is a discovery tool only. It is not a zoning approval, permit approval, certificate of occupancy review,
+        building code review, or legal determination. Contact Zoning before signing a lease.
+      </div>
+    </section>
+
+    <section class="card" id="wizard-card">
+      <div class="progress">
+        <span id="step-label">Step 1</span>
+        <button class="secondary restart-button" id="restart-btn" type="button">Start over</button>
+      </div>
+
+      <h2 id="question-title"></h2>
+      <p id="question-help" class="help"></p>
+      <div id="answers" class="answers"></div>
+
+      <div class="nav-row">
+        <button id="back-btn" type="button" class="secondary">Back</button>
+      </div>
+    </section>
+
+    <section class="card result hidden" id="result-card">
+      <div class="progress result-progress">
+        <p class="eyebrow">Suggested result</p>
+        <button id="result-restart-btn" type="button" class="secondary restart-button">Start over</button>
+      </div>
+      <h2 id="result-use-type"></h2>
+      <p id="result-category" class="help"></p>
+
+      <div id="result-warning" class="warning hidden"></div>
+
+      <div class="zone-grid">
+        <div>
+          <h3>These districts allow you to open the type of business you want</h3>
+          <div id="permitted-zones" class="zone-list"></div>
+        </div>
+        <div>
+          <h3>These districts may require special use permit</h3>
+          <div id="special-use-zones" class="zone-list"></div>
+        </div>
+      </div>
+
+      <div class="notice">
+        The result is based on a draft decision tree and lookup table. Zoning staff should review the use classification,
+        official zoning ordinance references, and final disclaimer language before public launch.
+      </div>
+
+      <div class="result-actions">
+        <a id="map-link" class="primary-link" href="#" target="_blank" rel="noopener">Open filtered map</a>
+      </div>
+
+      <details>
+        <summary>Technical map URL preview</summary>
+        <code id="url-preview"></code>
+      </details>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
