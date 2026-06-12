@@ -1582,15 +1582,8 @@ const ALLOWED_USES = {
 };
 
 const CONFIG = {
-<<<<<<< HEAD
   // ArcGIS Experience Builder app and zoning layer filter details.
   experienceBuilderUrl: "https://experience.arcgis.com/experience/21dbdedc635842cda73887ea153f856d",
   dataSourceId: "dataSource_1-193db687bd3-layer-3",
   zoningDistrictField: "REZONE"
-=======
-  // Replace these when GIS/Jonah confirms the ArcGIS Experience Builder app and layer details.
-  experienceBuilderUrl: "https://experience.arcgis.com/experience/YOUR_APP_ID",
-  dataSourceId: "YOUR_DATA_SOURCE_ID",
-  zoningDistrictField: "ZONE_DISTRICT"
->>>>>>> 50a60ecb6cfd4f7753b1101b828a2dea905be4ef
 };
