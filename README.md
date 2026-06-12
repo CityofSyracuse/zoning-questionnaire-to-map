@@ -1,40 +1,35 @@
-# Syracuse Zoning Business Wizard - Starter Prototype
+# Syracuse Zoning Wizard
 
-This is a small HTML/CSS/JavaScript prototype for a public-facing zoning business wizard.
+A public-facing prototype web tool for helping users explore possible zoning districts for a proposed business in Syracuse, NY.
 
-## What it does
+The wizard asks a series of plain-language questions about the user’s business type and returns a likely zoning use category, permitted zoning districts, special-use districts, and a link placeholder for an ArcGIS Experience Builder map.
 
-- Asks step-by-step business-use questions.
-- Maps plain-English answers to zoning Use Types.
-- Looks up permitted and special-use zoning districts.
-- Builds a placeholder ArcGIS Experience Builder URL.
-- Shows a disclaimer and result screen.
+## Project Purpose
 
-## How to run
+This tool is intended to help business owners, commercial tenants, realtors, and city staff better understand where certain business uses may be allowed under Syracuse zoning.
 
-Open `index.html` in your browser.
+It is a discovery tool only. It does not provide zoning approval, permit approval, certificate of occupancy approval, building code review, fire review, or legal determination.
 
-No build tools are required.
+## Features
 
-## Files
+- Step-by-step business use wizard
+- Plain-language questions and answers
+- Result screen showing:
+  - likely zoning use type
+  - permitted zoning districts
+  - special-use districts
+  - important disclaimer
+- Placeholder ArcGIS Experience Builder URL integration
+- Syracuse logo and simple public-facing layout
+- Built with plain HTML, CSS, and JavaScript
 
-- `index.html` - page structure
-- `styles.css` - visual styling
-- `data.js` - decision tree, allowed uses lookup, ArcGIS config
-- `app.js` - wizard logic and result rendering
+## File Structure
 
-## Next configuration step
-
-In `data.js`, replace:
-
-```js
-experienceBuilderUrl: "https://experience.arcgis.com/experience/YOUR_APP_ID",
-dataSourceId: "YOUR_DATA_SOURCE_ID",
-zoningDistrictField: "ZONE_DISTRICT"
-```
-
-with the real values from GIS/ArcGIS Experience Builder.
-
-## Important note
-
-The ArcGIS URL format is a placeholder. The GIS team should confirm the final Experience Builder URL parameter format.
+```text
+zoning-wizard/
+├── index.html
+├── styles.css
+├── app.js
+├── data.js
+└── assets/
+    └── syracuse-logo.webp
