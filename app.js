@@ -124,7 +124,6 @@ function buildMapUrl({ permitted, specialUse, useType }) {
     return CONFIG.experienceBuilderUrl;
   }
 
-<<<<<<< HEAD
   const whereClause = allZones
     .map((zone) => `${CONFIG.zoningDistrictField}='${zone}'`)
     .join(" OR ");
@@ -132,20 +131,6 @@ function buildMapUrl({ permitted, specialUse, useType }) {
   const encodedWhereClause = encodeURIComponent(whereClause);
 
   return `${CONFIG.experienceBuilderUrl}/?data_filter=${CONFIG.dataSourceId}:${encodedWhereClause}`;
-=======
-  const quotedZones = allZones.map((zone) => `'${zone}'`).join(",");
-  const whereClause = `${CONFIG.zoningDistrictField} IN (${quotedZones})`;
-
-  // Placeholder pattern. Confirm exact Experience Builder URL parameter format with GIS.
-  const params = new URLSearchParams({
-    data_filter: `${CONFIG.dataSourceId}:${whereClause}`,
-    use: useType,
-    permitted: permitted.join(","),
-    specialUse: specialUse.join(",")
-  });
-
-  return `${CONFIG.experienceBuilderUrl}/?${params.toString()}`;
->>>>>>> 50a60ecb6cfd4f7753b1101b828a2dea905be4ef
 }
 
 function goBack() {
